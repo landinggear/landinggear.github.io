@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="zh-tw">
+    <head>
+        <meta charset="utf-8">
+        <title>作品集001</title>
+        <style type="text/css">
+        body{padding: 0px;margin: 0px;}
+        #form1{width: 100%;height:1000px;padding: 0px;margin: 0px;}
+        
+        .box2{height: 70%;}
+        .box3{height: 30%;;border-top:1px solid rgb(6, 63, 44);}
+        .buttom{
+            width:100%;height:50px;position:fixed;bottom:0px;right:0px;
+            background-color:rgb(6, 63, 44);opacity: 0.9;padding: 0px;margin: 0px;}
+        .btnlist{padding: 0px;margin: 0px}
+        .btnlist>li{
+            width:25%;height:100%;color: burlywood;float: left;
+            list-style-type: none;text-align: center;font-size: 40px;}
+        .btnlist>li:hover{cursor: pointer;background-color:rgb(5, 46, 32); }
+        .buttomlist{width: 100%;height: 70%;background-color:rgb(8, 78, 55);position: fixed;right:0px;bottom:50px;opacity:0.9;}
+        </style>
+        <script src="jquery-3.3.1.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                $('.buttomlist').hide();
+                $('.btnlist>li').click(function(){
+                    $('.buttomlist').fadeToggle();
+                });
+                
+
+
+
+            });
+        </script>
+    </head>
+    <body>
+        <div id="form1">
+            
+            <div class="box2"></div>
+            <div class="box3"></div>
+            
+        </div>
+        <div class="buttom">
+            <ul class="btnlist">
+                <li><a>text1</a></li>
+                <li><a>text2</a></li>
+                <li><a>text3</a></li>
+                <li><a>text4</a></li>
+            </ul>
+        </div>
+        <div class="buttomlist">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        
+    </body>
+</html>
